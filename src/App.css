@@ -1,0 +1,171 @@
+/* Center alignment and base styling */
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  background-color: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Logo styling with enhanced animation */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+.App-logo:hover {
+  transform: scale(1.1);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 10s linear;
+  }
+}
+
+/* Header styling */
+.App-header {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin);
+  color: #333;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Link styling */
+.App-link {
+  color: #830dd2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.App-link:hover {
+  color: #007acc;
+  text-decoration: underline;
+}
+
+/* Form container styling */
+form {
+  background-color: #fff;
+  padding: 26px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 850px;
+  margin: 2px auto;
+  text-align: left;
+  color: #333;
+}
+
+/* Form field styling */
+form div {
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+  border-color: #61dafb;
+  outline: none;
+  box-shadow: 0 0 5px rgba(97, 218, 251, 0.5);
+}
+
+/* Submit button styling */
+form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ca0808;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+form button:hover {
+  background-color: #6c0303;
+  transform: translateY(-2px);
+}
+
+form button:active {
+  transform: translateY(0);
+  background-color: #480303;
+}
+
+/* Submitted data styling */
+.submitted-data {
+  margin-top: 30px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: left;
+  color: #000000;
+}
+
+.submitted-data h3 {
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: #06aeba;
+  font-weight: bold;
+  border-bottom: 2px solid #796003;
+  padding-bottom: 10px;
+}
+
+.submitted-data p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+  line-height: 1.8;
+}
+
+
+/* Animation for logo spin */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Button hover effect */
+form button:hover {
+  background-color: #650303;
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: all 0.3s ease;
+}
